@@ -1,0 +1,131 @@
+<script type="text/javascript">
+
+  $(function() {
+
+    $('#header').find('.login').toggle(function() {
+      $('.b-login').slideDown();
+      $(this).addClass("active");
+    }, function() {
+      $('.b-login').slideUp();
+      $(this).removeClass("active");
+    });
+
+  });
+
+</script>
+<style type="text/css">
+  .b-login {
+    background: #e6e6e6;
+    display: none;
+    padding: 20px 0;
+  }
+  .b-login .title {margin-bottom: 20px; text-transform: uppercase;}
+  .b-login label {font-size: 13px; margin-bottom: 0;}
+  .b-login label span {color: #eb2629;}
+  .b-login form .remember {margin-bottom: 10px;} 
+  .b-login form .remember input {margin-top: -4px;}
+  .b-login .content {
+    border-top: 1px solid #d5d5d5;
+    margin-bottom: 20px;
+    margin-right:  20px;
+    padding-top: 20px;
+  }
+  .b-login .content p {margin-bottom: 0;}
+  .b-login .social-login div:first-child {margin-bottom: 20px;}
+  .b-login .details {font-size: 11px; line-height: 15px;}
+  .b-login .details a {color: #333; text-decoration: underline;}
+  .b-login .details a:hover {text-decoration: none;}  
+  .b-login .info {
+    text-align: center;
+    font-size: 11px;
+    margin: 20px 0;
+  }
+  .b-login .info span {color: #eb2629;}
+  .b-login .login {border-right: 1px solid #c5c5c5;}
+  .b-login .register {padding-left: 20px;}
+</style>
+
+<div class="b-login">
+  <div class="container">
+    <div class="row">
+
+      <div class="span5">
+        <div class="login">
+          <header><h4 class="title">Авторизация</h4></header>
+          <form>
+            <div class="control-group">
+              <label class="muted"><b>E-mail или RUNET ID</b></label>
+              <input type="text" class="span4">
+            </div>
+            <div class="control-group">
+              <label class="muted"><b>Пароль</b></label>
+              <input type="password" class="span4">
+            </div>
+            <div class="control-group remember"><label><input type="checkbox"> Запомнить меня</label></div>
+            <div><input type="submit" class="btn btn-info span2" value="Войти"></div>
+          </form>
+          <footer>
+            <div class="content"><p>Вы можете авторизоваться или зарегистрироваться используя учётные записи Facebook или Twitter.</p></div>
+            <div class="social-login">
+              <div><a href="#"><img src="/images/temp/facebook-login.png" alt=""></a></div>
+              <div><a href="#"><img src="/images/temp/twitter-login.png" alt=""></a></div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div class="span7">
+        <div class="register">
+          <header><h4 class="title">Новый пользователь</h4></header>
+          <form>
+            <div class="clearfix">
+              <div class="pull-left">
+                <div class="control-group error">
+                  <label class="muted"><b>Фамилия <span>*</span></b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group error">
+                  <label class="muted"><b>Имя <span>*</span></b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group">
+                  <label class="muted"><b>Отчество</b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group">
+                  <label class="muted"><b>Пароль</b></label>
+                  <input type="password" class="span3">
+                </div>
+              </div>
+              <div class="pull-right">
+                <div class="control-group error">
+                  <label class="muted"><b>Компания <span>*</span></b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group">
+                  <label class="muted"><b>Должность</b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group error">
+                  <label class="muted"><b>E-mail <span>*</span></b></label>
+                  <input type="text" class="span3">
+                </div>
+                <div class="control-group">
+                  <label class="muted"><b>Телефон</b></label>
+                  <input type="text" class="span3">
+                </div>
+              </div>
+            </div>
+            <div class="info"><b><span>*</span></b> — поля обязательны для заполнения</div>
+            <div class="clearfix">
+              <div class="span3 pull-left"><input type="submit" class="btn btn-info span3" value="Зарегистрировать"></div>
+              <div class="details">Регистрация в системе означает ваше согласие с условиями <a href="#">пользовательского соглашения</a></div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
